@@ -10,19 +10,20 @@ public class ContaTerminal {
         System.out.println("Bem-vindo, esse e o sistema de criação de conta no TerminalBank, siga as instruções a seguir!");
 
         System.out.println("Por favor, digite o número da agência");
-        int numeroConta = scanner.nextInt();
-        
+        int numero = scanner.nextInt();
+        scanner.nextLine(); 
+
         System.out.println("Por favor, digite a agência");
-        String agencia = scanner.next();
+        String agencia = scanner.nextLine();
 
         System.out.println("Por favor, digite o seu nome");
-        String nomeCliente = scanner.next();
+        String nomeCliente = scanner.nextLine();
 
         System.out.println("Por favor, digite o saldo");
         double saldo = scanner.nextDouble();
 
         //Exibir a mensagem da conta criada
-        System.out.println("Óla " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numeroConta + " e seu saldo " + saldo + " já está disponível para saque.");
-
+        System.out.println("Óla " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque.");
+        
     }
 }
